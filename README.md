@@ -55,7 +55,6 @@ Analysis of LendingClub loan data (2007-2018) to identify credit risk patterns a
     │   ├── silver/     # Cleaned and filtered data
     │   └── gold/       # Dimensional model ready for BI
     ├── notebooks/      # Jupyter notebooks for EDA and ETL
-    ├── sql/            # DuckDB analytical queries
     ├── dashboard/      # Power BI (.pbix) files
     └── images/         # Dashboard screenshots and charts
 
