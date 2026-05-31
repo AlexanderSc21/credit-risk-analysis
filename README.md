@@ -17,8 +17,7 @@
 ## 📈 Dashboard Preview
 
 ### Executive Summary
-![Executive Summary Dashboard](images\image.png)
-
+![Executive Summary Dashboard](images/image.png)
 ---
 
 ## 📊 Key Insights (SQL Analytics)
