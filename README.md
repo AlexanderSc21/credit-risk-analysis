@@ -1,7 +1,7 @@
 # Credit Risk Analysis
 > Loan default risk analysis using Python, SQL (DuckDB), and Power BI.
 
-**Project Progress:** ▓▓▓▓▓▓▓▓▓░ **90% Complete**
+**Project Progress:** ▓▓▓▓▓▓▓▓▓░ **92% Complete**
 
 ## 🚧 Current Status / Roadmap
 *This project is nearing completion. Core pipelines are built, and the initial Power BI executive dashboard is live.*
@@ -18,6 +18,7 @@
 
 ### Executive Summary
 ![Executive Summary Dashboard](images/image.png)
+![alt text](images/image2.png)
 
 ---
 
