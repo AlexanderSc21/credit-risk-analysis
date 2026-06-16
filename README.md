@@ -21,7 +21,7 @@
 ![alt text](images/image2.png)
 ![alt text](images/image3.png)
 ![alt text](images/image4.png)
----
+--- 
 
 ## 📊 Key Insights (SQL Analytics)
 Based on the analytical queries performed on the processed data, several critical risk patterns have been identified:
