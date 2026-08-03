@@ -12,8 +12,8 @@ venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-data/gold/*.duckdb
 *.duckdb
+*.duckdb.wal
 *.db
 
 # Power BI
@@ -21,3 +21,8 @@ data/gold/*.duckdb
 
 # Logs
 *.log
+
+# OS files
+desktop.ini
+Thumbs.db
+.DS_Store

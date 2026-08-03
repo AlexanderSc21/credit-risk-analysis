@@ -30,8 +30,11 @@ else:
     os.environ["KAGGLE_USERNAME"] = kaggle_user
     os.environ["KAGGLE_KEY"] = kaggle_key
 
-    # Find kaggle executable dynamically or fallback to hardcoded local path
-    kaggle_cli = shutil.which("kaggle") or r"C:\Users\alexa\AppData\Local\Python\pythoncore-3.14-64\Scripts\kaggle.exe"
+    # Find kaggle executable dynamically
+    kaggle_cli = shutil.which("kaggle")
+    if not kaggle_cli:
+        print("Critical Error: kaggle CLI not found. Install it with: pip install kaggle")
+        sys.exit(1)
 
     # 2. Resilient Download (Check if CSV exists to avoid redundant downloads)
     csv_files = [f for f in glob.glob("data/bronze/**/accepted*.csv", recursive=True) if os.path.isfile(f)]

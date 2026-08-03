@@ -5,7 +5,7 @@ This directory contains the interactive dashboard template for the Credit Risk A
 > ✅ **Project Complete:** The dashboard includes the fully functional **Executive Summary**, **Risk Analysis**, **Customer Analysis**, and **Geographic Analysis** views.
 
 ## 📁 Content
-* **`Credit Risk Analysis Template.pbit`**: The lightweight Power BI Template file. This preserves all visuals, DAX measures, and data model relationships without storing the massive underlying dataset, keeping the repository optimized.
+* **`Credit Risk Analysis.pbit`**: The lightweight Power BI Template file. This preserves all visuals, DAX measures, and data model relationships without storing the massive underlying dataset, keeping the repository optimized.
 
 ## 🛠️ How to Open
 1. Ensure you have **Power BI Desktop** installed.

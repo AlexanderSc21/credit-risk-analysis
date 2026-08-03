@@ -13,10 +13,10 @@ To run the pipelines locally and generate the database, you must first populate 
 
 ### Option A: Automated Download (Recommended)
 If you have your Kaggle API credentials configured, you can use the extraction script:
-1. Ensure your `.env` file is set up with your `KAGGLE_TOKEN`.
-2. Run the extraction script to fetch the data directly via API:
+1. Ensure your `.env` file is set up with `KAGGLE_USERNAME` and `KAGGLE_KEY`.
+2. Run the extraction script from the **repository root**:
    ```bash
-   python download_data.py
+   python data/bronze/download_data.py
    ```
 
 ### Option B: Manual Download
