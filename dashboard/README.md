@@ -1,15 +1,15 @@
 # 📊 Power BI Dashboard
 
-This directory contains the interactive dashboard file for the Credit Risk Analysis project.
+This directory contains the interactive dashboard template for the Credit Risk Analysis project.
 
-> 🚧 **Work in Progress:** The current `.pbix` file includes the fully functional **Executive Summary** view. Additional detailed analytical views (such as the Risk Deep-Dive) are currently under development as part of Phase 5 and will be published in upcoming updates.
+> ✅ **Project Complete:** The dashboard includes the fully functional **Executive Summary**, **Risk Analysis**, **Customer Analysis**, and **Geographic Analysis** views.
 
 ## 📁 Content
-* **`credit_risk_dashboard.pbix`**: The core Power BI file containing the data model (Star Schema connected to the Gold layer), DAX measures, and the main executive report.
+* **`Credit Risk Analysis Template.pbit`**: The lightweight Power BI Template file. This preserves all visuals, DAX measures, and data model relationships without storing the massive underlying dataset, keeping the repository optimized.
 
 ## 🛠️ How to Open
-1. Ensure you have **Power BI Desktop** installed (latest version recommended).
-2. Download the `.pbix` file from this directory.
-3. Open the file to interact with the visual reports, filters, and underlying data model.
+1. Ensure you have **Power BI Desktop** installed.
+2. Ensure you have run the Data Engineering pipelines to generate the `goldBI.duckdb` database locally.
+3. Open the `.pbit` file. Power BI will prompt you to connect to the underlying DuckDB database to populate the visuals.
 
-*Note: The preview screenshot of this dashboard is available in the main repository README.*
+*Note: Previews of this dashboard are available in the main repository README and the `images/` directory.*

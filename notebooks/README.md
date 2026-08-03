@@ -8,16 +8,19 @@ This directory contains the sequential Jupyter Notebooks used for the end-to-end
 
 To understand the data pipeline correctly, the notebooks should be reviewed in the following order:
 
-1. **`01_eda.ipynb` (Exploratory Data Analysis)**
-   * **Purpose:** Initial data profiling, handling missing values, and identifying core risk features.
+1. **`01_bronze_to_silver.ipynb` (Cleaning & Null Handling)**
+   * **Purpose:** Initial data profiling, strict handling of missing values, and identifying core risk features following Medallion Architecture.
 
-2. **`02_gold.ipynb` (Dimensional Modeling)**
-   * **Purpose:** Transforms the cleaned data into a Star Schema design (Fact and Dimension tables) ready for analytical querying.
+2. **`02_silver_to_gold.ipynb` (Architecture Splitting & Feature Eng)**
+   * **Purpose:** Transforms the cleaned data and splits it into BI (hindsight) and ML (foresight) pathways to prevent data leakage.
 
-3. **`03_data_validation.ipynb` (Data Quality & Validation)**
-   * **Purpose:** Applies data quality checks ensuring schema consistency, non-null constraints, and logical bounds across the pipeline.
+3. **`03_bi_star_schema.ipynb` (Dimensional Modeling)**
+   * **Purpose:** Builds the Star Schema design (Fact and Dimension tables) in DuckDB, optimized for Power BI consumption.
 
-4. **`04_sql_analysis.ipynb` (SQL Analytics with DuckDB)**
+4. **`04_data_validation.ipynb` (Data Quality & Validation)**
+   * **Purpose:** Applies strict data quality checks ensuring schema consistency, non-null constraints, and referential integrity.
+
+5. **`05_sql_analysis.ipynb` (SQL Analytics)**
    * **Purpose:** Runs highly optimized analytical SQL queries using DuckDB to extract the key insights displayed in the executive dashboard.
 
 ---

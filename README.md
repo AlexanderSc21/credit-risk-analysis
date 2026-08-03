@@ -17,11 +17,10 @@
 ## 📈 Dashboard Preview
 
 ### Power BI Report Pages
-![Executive Summary](images/image.png)
-![Risk Analysis](images/image2.png)
-![Customer Analysis](images/image3.png)
-![Geographic Analysis](images/image4.png)
-*(Note: Final dashboard screenshots will be updated shortly).*
+![Executive Summary](images/Page%201%20%28Executive%20Summary%29.png)
+![Risk Analysis](images/Page%202%20%28Risk%20Analysis%29.png)
+![Customer Analysis](images/Page%203%20%28Customer%20Analysis%29.png)
+![Geographic Analysis](images/Page%204%20%28Geographic%20Analysis%29.png)
 
 --- 
 

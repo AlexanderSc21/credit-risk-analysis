@@ -15,3 +15,6 @@ __pycache__/
 data/gold/*.duckdb
 *.duckdb
 *.db
+
+# Power BI
+*.pbix
