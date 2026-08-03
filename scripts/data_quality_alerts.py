@@ -41,13 +41,11 @@ def main():
         else:
             logger.info(f"PASS: fact_loans contains {row_count:,} records.")
 
-        # 2. Check for unexpected nulls in critical metrics
+        # 2. Check for Ongoing Loans (NULL default_flag)
         null_defaults = con.execute("SELECT COUNT(*) FROM fact_loans WHERE default_flag IS NULL").fetchone()[0]
-        if null_defaults > 0:
-            logger.error(f"Data Quality Exception: Found {null_defaults} rows with NULL default_flag.")
-            errors_found += 1
-        else:
-            logger.info("PASS: No NULL values found in default_flag.")
+        logger.info(f"BUSINESS LOGIC: Found {null_defaults:,} ongoing/current loans (default_flag = NULL).")
+        if null_defaults == 0:
+            logger.warning("Alert: 0 ongoing loans found. This is unusual for the full LendingClub dataset.")
 
         # 3. Check for realistic Default Rate (Business Logic Check)
         default_rate = con.execute("""
